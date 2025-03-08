@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icon (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+
+  
+  <!-- navbar  -->
+
+<nav class="p-4">
+  <div
+    class="container mx-auto max-w-[1160px] flex justify-between items-center"
+  >
+    <!-- Logo and Company Name -->
+    <div class="flex items-center gap-2">
+      <img src="/assets/logo.png" alt="Logo" class="h-10 w-10" />
+      <span class="text-black text-[32px] font-bold">School</span>
+    </div> 
+
+    <!-- Navigation Links (Centered) -->
+    <div class="hidden md:flex space-x-6 mx-auto font-bold">
+      <a href="#" class="text-[#FEA301] hover:text-[#F08000]">Home</a>
+      <a href="#" class="text-[#01ACFD] hover:text-[#0096D6]">About</a>
+      <a href="#" class="text-[#05D4DF] hover:text-[#02A6B4]">Facility</a>
+      <a href="#" class="text-[#05D4DF] hover:text-[#02A6B4]">Admission</a>
+    </div>
+    
+
+    <!-- Contact Button -->
+    <div class="hidden md:block">
+      <a
+        href="#"
+        class="bg-[#FEA301] text-white px-5 py-2 rounded-md font-medium hover:bg-[#FF5722]"
+        >Contact</a
+      >
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="menu-toggle"
+      class="md:hidden text-2xl focus:outline-none"
+    ><i class="fas fa-bars"></i></button> 
+  </div>
+
+  <!-- Mobile Menu -->
+  <div 
+    id="mobile-menu"
+    class="hidden md:hidden flex flex-col items-center py-4 space-y-4 font-bold"
+  >
+  <a href="#" class="text-[#FEA301] hover:text-[#F08000]">Home</a>
+  <a href="#" class="text-[#01ACFD] hover:text-[#0096D6]">About</a>
+  <a href="#" class="text-[#05D4DF] hover:text-[#02A6B4]">Facility</a>
+  <a href="#" class="text-[#05D4DF] hover:text-[#02A6B4]">Admission</a>
+  <a
+  href="#"
+  class="bg-[#FEA301] text-white px-5 py-2 rounded-md font-medium hover:bg-[#FF5722]"
+  >Contact</a
+>
+  </div>
+</nav>
+   
+    <main><!-- Hero Section -->
+      <section class="px-4">
+        <div
+          class="container mx-auto max-w-[1160px] flex flex-col md:flex-row items-center text-center md:text-left md:gap-12"
+        >
+          <div class="md:w-[55%]">
+            <h1 class="text-4xl md:text-6xl font-bold">
+              <span class="text-[#FEA301]">Empowering</span> students from small
+              age <span class="text-[#01ACFD]">towards vision</span>
+            </h1>
+            <p class="text-[#111111] mt-4 text-lg">
+              With the courage, Confidence, Creativity and Compassion to make
+              their Unique Contribution in a Diverse and Dynamic World.
+            </p>
+            <div class="mt-6">
+              <a
+                href="#"
+                class="bg-[#111111] text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-700"
+                >Get Started</a
+              >
+              <a
+                href="#"
+                class="ml-4 text-blue-600 text-lg font-medium hover:underline"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="md:w-[46%] flex items-center justify-end">
+            <img
+              src="assets/hero-kids.png"
+              alt="Hero Image"
+              class="w-full max-w-md"
+            />
+          </div>
+        </div>
+      </section> 
+  
+      <!-- Standard Curriculum Section -->
+      <section class="py-[60px] bg-white mx-auto">
+        <div class="container mx-auto max-w-[1160px] text-center px-4">
+          <h2 class="text-[#000000] text-2xl md:text-4xl lg:text-5xl font-bold">
+            Standard Curriculum
+          </h2>
+          <p class="text-gray-600 mt-4 text-base md:text-lg">
+            Explore our well-structured curriculum designed for excellence.
+          </p>
+          
+          <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Kinder -->
+            <div class="w-full md:h-[480px] border border-[#DEF5FF] rounded-xl shadow-md bg-gradient-to-b from-blue-100 to-white px-6 py-8 md:py-[60px] flex flex-col items-center">
+              <img src="assets/kinder.png" alt="Kinder" class="max-w-full h-auto">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mt-6">Kinder (3-6) Years</h3>
+              <p class="mt-4 pb-6 text-sm md:text-base text-gray-600 text-center">
+                Comprehensive and structured learning materials to enhance your knowledge.
+              </p>
+              <button class="text-[#64C8FF] font-bold hover:underline">Read more</button>
+            </div>
+      
+            <!-- Elementary -->
+            <div class="w-full md:h-[480px] border border-[#FFF4DC] rounded-xl shadow-md bg-gradient-to-b from-[#FFF4DC] via-transparent to-white px-6 py-8 md:py-[60px] flex flex-col items-center">
+              <img src="assets/elementary.png" alt="Elementary" class="max-w-full h-auto">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mt-6">Elementary School</h3>
+              <p class="mt-4 pb-6 text-sm md:text-base text-gray-600 text-center">
+                A modern approach to learning, tailored to meet your educational goals.
+              </p>
+              <button class="text-[#F0AA00] font-bold hover:underline">Read more</button>
+            </div>
+      
+            <!-- Middle -->
+            <div class="w-full md:h-[480px] border border-[#F2E8FF] rounded-xl shadow-md bg-gradient-to-b from-[#EEE1FF] via-transparent to-white px-6 py-8 md:py-[60px] flex flex-col items-center">
+              <img src="assets/middle.png" alt="Middle School" class="max-w-full h-auto">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mt-6">Middle (10-16) Years</h3>
+              <p class="mt-4 pb-6 text-sm md:text-base text-gray-600 text-center">
+                Engaging and interactive learning materials for better understanding.
+              </p>
+              <button class="text-[#8700FF] font-bold hover:underline">Read more</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Carousel Navigation -->
+        <div class="pt-[60px] flex justify-center items-center gap-6">
+          <button class="w-12 h-12 bg-[#FEA301] text-white px-4 py-3 rounded-full shadow-md hover:bg-yellow-600">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="w-12 h-12 bg-[#FEA301] text-white px-4 py-3 rounded-full shadow-md hover:bg-yellow-600">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      
+      <!-- Story Section -->
+  <section class="max-w-[1160px] mx-auto px-4 pb-12">
+    <h2 class="text-center text-black text-[46px] font-bold pb-12">Our Stories</h2>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-[1160px] mx-auto">
+      <!-- First Story (Spanning Full Width in Large Screens) -->
+      <div class="hidden sm:block col-span-1 lg:col-span-1 bg-white shadow-lg rounded-lg md:w-full relative">
+        <img src="assets/story-1.png" alt="Story Image" class="w-full h-[377px] object-cover rounded-md">
+        <p class="text-base text-white text-center mt-2 md:px-8 p-2 absolute bg-[#3CD8E8] w-[124px] h-[33px] md:w-[175px] md:h-[48px] md:px-[18px] md:py-[15px] rounded-3xl top-[345px] left-8">March 6, 2025</p>
+        <h3 class="text-2xl font-bold mt-[56px] md:px-8 px-4">A fun toddler coloring training on
+  classroom</h3>
+        <p class="text-gray-700 mt-12 md:px-8 px-4">Beautiful branding for changes by Never Now in Australia.
+          changes is a platform for open discussion in an inclusive and
+          collaborative environment, providing the...</p>
+      </div>
+  
+      <!-- Remaining Stories -->
+      <div class="grid  grid-cols-1 md:grid-cols-2 gap-5 w-full">
+      <div class="flex flex-row md:flex-col gap-6">
+        <div class="bg-white shadow-lg rounded-lg w-full min-h-[300px] relative">
+          <img src="assets/story-2.png" alt="Story Image" class="w-full md:h-[177px] h-[105px] object-cover rounded-md">
+          <p class=" absolute bg-[#95B226] text-white text-[16px] rounded-3xl mt-2 p-2 w-[136px] h-10 left-10 text-center top-[76px] md:top-[144px]">March 5, 2025</p>
+          <h3 class="text-[16px] font-bold mt-[25px] md:mt-[43] md:px-8 px-4">Find out if a school fits the
+            family’s needs</h3>
+          
+        </div>
+        <div class="bg-white shadow-lg rounded-lg w-full min-h-[300px] relative">
+          <img src="assets/story-3.png" alt="Story Image" class="w-full md:h-[177px] h-[105px] object-cover rounded-md">
+          <p class="absolute bg-[#95B226] text-white text-[16px] rounded-3xl mt-2 p-2 w-[136px] h-10 left-10 text-center top-[76px] md:top-[144px]">March 4, 2025</p>
+          <h3 class="text-[16px] font-bold mt-[25px] md:mt-[43] md:px-8 px-4">Summer math & literacy
+            centres for kids</h3>
+          
+        </div>
+      </div>
+  
+      <div class=" flex flex-row md:flex-col gap-6">
+        <div class="bg-white shadow-lg rounded-lg w-full min-h-[300px] relative">
+          <img src="assets/story-4.png" alt="Story Image" class="w-full md:h-[177px] h-[105px] object-cover rounded-md">
+          <p class="absolute bg-[#95B226] text-white text-[16px] rounded-3xl mt-2 p-2 w-[136px] h-10 left-10 text-center top-[76px] md:top-[144px]">March 3, 2025</p>
+          <h3 class="text-[16px] font-bold mt-[25px] md:mt-[43] md:px-8 px-4">Classroom management
+            techniques for new tutors</h3>
+         
+        </div>
+        <div class="bg-white shadow-lg rounded-lg w-full min-h-[300px] flex flex-col justify-start relative">
+          <img src="assets/story-5.png" alt="Story Image" class="w-full md:h-[177px] h-[105px] object-cover rounded-md">
+          <p class="absolute bg-[#95B226] text-white text-[16px] rounded-3xl mt-2 p-2 w-[136px] h-10 left-10 text-center top-[76px] md:top-[144px]">March 2, 2025</p>
+          <h3 class="text-[16px] font-bold mt-[25px] md:mt-[43] md:px-8 px-4">Conversation rhymes
+            improve kids listening</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <div class="flex justify-center items-center"><button class="bg-black w-[197px] h-[50px] text-white text-center rounded-xl  text-xl font-bold">View All</button></div>
+   </main>   
+    <!-- footer section  -->
+
+
+    <footer class="bg-[#01ACFD] pt-20 px-4 max-w-[1440px] mx-auto mt-[60px]">
+      <div class="container mx-auto max-w-[1160px] flex flex-col md:flex-row justify-between gap-4 pb-32">
+        <div>
+          <div class="flex justify-start gap-2 text-white text-[42px] md:text-[48px] font-bold leading-[40px]">
+            <img src="assets/logo.png" alt="Kids School Logo" class="w-[86px] h-[86px]">
+            <h1>Kids <br>Education</h1>
+          </div>
+          <p class="mt-[20px] md:max-w-[390px] w-[300px] text-[16px] md:text-xl text-white">
+            Our school promotes a positive 
+            environment where students embrace a 
+            "can-do" attitude, building confidence, resilience, 
+            and empowering them to reach their full potential.
+          </p>
+        </div>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-bold mb-8 text-white">About School</h1>
+          <div class="flex flex-col gap-5 text-xl md:text-2xl">
+            <a href="#" class="text-white hover:text-gray-200">Home</a>
+            <a href="#" class="text-white hover:text-gray-200">About</a>
+            <a href="#" class="text-white hover:text-gray-200">Facility</a>
+            <a href="#" class="text-white hover:text-gray-200">Admission</a>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-bold mb-8 text-white">Keep in Touch</h1>
+          <div class="flex flex-row gap-3">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="/assets/fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.google.com" target="_blank">
+              <img src="/assets/google+.png" alt="Google+">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="/assets/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://dribbble.com" target="_blank">
+              <img src="/assets/dribble.png" alt="Dribbble">
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center">&copy; 2025 Kids Learning Academy. All rights reserved.</p>
+    </footer>
+    
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+  
+      menuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+      });
+  </script>
+  
+  </body>
+</html>
